@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color Changing</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>Color Flow</h1>
+            <h4 id="sub-heading">Experience Dynamic Colors in Real Time</h4>
+        </div>
+
+        <div class="color-box">
+            <div id="code">#667eea</div>
+        </div>
+
+        <div class="speed-meter">
+            <label for="speedLabel">⚡ Change Speed:</label>
+            <input type="range" id="speedLabel" min="1" max="10" value="5" aria-label="Color Change Speed From Very-Slow to Lighting">
+            <div class="speed-display">Speed: <span id="value">Normal</span></div>
+        </div>
+
+        <div class="buttons">
+            <button type="button" id="start" aria-label="Start Color Flow">🎨 Start Flow</button>
+            <button type="button" id="stop" aria-label="Stop Color Flow">⏹️ Stop Flow</button>
+        </div>
+
+        <div class="status-display">
+            <div id="status"></div>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
